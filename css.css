@@ -6,7 +6,7 @@
 
 .block
 {
-	/*background-color: black;*/
+
 	width: 200px;
 	height: 200px;
 	float: left;
@@ -132,4 +132,104 @@
 	border-radius: 100px / 50px;
 	margin:50px 0px;
 	background-color: blue;	
+}
+
+#treugolnik
+{
+	width: 0px;
+	height: 0px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid yellow;
+	margin: 50px 50px;
+}
+
+#notreugolnik
+{
+	width: 0px;
+	height: 0px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid yellow;
+	margin: 50px 50px;
+}
+
+#treugolnik1
+{
+	width: 0px;
+	height: 0px;
+	border-top: 50px solid transparent;
+	border-right: 100px solid yellow;
+	border-bottom: 50px solid transparent;
+	margin: 50px 50px;
+}
+
+#treugolnik2
+{
+	width: 0px;
+	height: 0px;
+	border-top: 50px solid transparent;
+	border-left: 100px solid yellow;
+	border-bottom: 50px solid transparent;
+	margin: 50px 50px;
+}
+
+#treugolnik3
+{
+	width: 0px;
+	height: 0px;
+	border-top: 100px solid green;
+	border-right: 100px solid transparent;
+	margin: 50px 50px;
+}
+
+#treugolnik4
+{
+	width: 0px;
+	height: 0px;
+	border-top: 100px solid green;
+	border-left: 100px solid transparent;
+	margin: 50px 50px;
+}
+
+#treugolnik5
+{
+	width: 0px;
+	height: 0px;
+	border-bottom: 100px solid green;
+	border-right: 100px solid transparent;
+	margin: 50px 50px;
+}
+
+#treugolnik6
+{
+	width: 0px;
+	height: 0px;
+	border-bottom: 100px solid green;
+	border-left: 100px solid transparent;
+	margin: 50px 50px;
+}
+
+#pyatiugolnik
+{
+	width: 54px;
+	position: relative;
+	border-width: 50px 18px 0px;
+	border-style: solid;
+	border-color: brown transparent;
+	margin: 90px auto;
+
+}
+
+#pyatiugolnik:before
+{
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent brown;
+    content: "";
 }

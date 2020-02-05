@@ -233,3 +233,149 @@
     border-color: transparent transparent brown;
     content: "";
 }
+
+#chectiugolnik {
+	width: 100px;
+	height: 55px;
+	background: brown;
+	position: relative;
+	margin: 73px auto;
+}
+#chectiugolnik:before {
+	content: "";
+	position: absolute;
+	top: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid brown;
+}
+#chectiugolnik:after {
+	content: "";
+	position: absolute;
+	bottom: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid brown;
+}
+
+#octagon {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: brown;
+	margin: 50px auto; 
+}
+ 
+#octagon:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;    
+	border-bottom: 29px solid brown;
+	border-left: 29px solid white;
+	border-right: 29px solid white;
+	width: 42px;
+	height: 0;
+}
+ 
+#octagon:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;    
+	border-top: 29px solid brown;
+	border-left: 29px solid white;
+	border-right: 29px solid white;
+	width: 42px;
+	height: 0;
+}
+
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin: 60px auto; 
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: brown;
+    border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+            transform: rotate(45deg);
+            transform-origin :100% 100%;
+}
+
+#infinity {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin: 50px 0px;
+}
+ 
+#infinity:before,
+#infinity:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;    
+    border: 20px solid orange;
+         border-radius: 50px 50px 0 50px;
+            transform: rotate(-45deg);
+}
+ 
+#infinity:after {
+    left: auto;
+    right: 0;
+         border-radius: 50px 50px 50px 0;
+            transform:rotate(45deg);
+}
+
+#blockrotate
+{
+	width: 100px;
+	height:100px;
+	background-color: orange;
+	animation: newfoo 1.2s;
+	animation: newd 1.2s;
+    margin: 50px auto;
+    animation-iteration-count: infinite;
+}
+
+@keyframes newfoo
+{
+0% { transform: perspective(120px) }
+  50% { transform: perspective(120px) rotateY(180deg) }
+  100% { transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes newd
+{
+0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
